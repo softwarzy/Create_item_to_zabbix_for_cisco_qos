@@ -25,7 +25,7 @@ import pickle
 def snmpwalk(host,oid):
     listtmp = list()
     for (errorIndication, errorStatus, errorIndex, varBinds) in nextCmd(SnmpEngine(),
-                                                                        CommunityData('yxjk7*#2006', mpModel=1),
+                                                                        CommunityData('*******', mpModel=1),
                                                                         UdpTransportTarget((host, 161)),
                                                                         ContextData(),
                                                                         ObjectType(ObjectIdentity(oid)),
@@ -46,7 +46,7 @@ def snmpwalk(host,oid):
 def snmpget(host,oid):
     listtmp = list()
     (errorIndication, errorStatus, errorIndex, varBinds) = getCmd(SnmpEngine(),
-                                                                        CommunityData('yxjk7*#2006', mpModel=1),
+                                                                        CommunityData('*******', mpModel=1),
                                                                         UdpTransportTarget((host, 161)),
                                                                         ContextData(),
                                                                         ObjectType(ObjectIdentity(oid))

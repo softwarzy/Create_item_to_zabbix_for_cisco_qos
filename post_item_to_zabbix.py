@@ -7,7 +7,7 @@ with open("final.pkl",'rb') as f:
     f.close()
 
 #运行之前,请输入url
-#url = "http://192.166.5.14/api_jsonrpc.php"
+
 url = "http://*.*.*.*/api_jsonrpc.php"
 
 #登陆获得token
